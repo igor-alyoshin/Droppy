@@ -25,8 +25,8 @@ public class DroppyMenuContainerView extends LinearLayout {
         this.setOrientation(VERTICAL);
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.DroppyMenuPopupView, defStyleAttr, 0);
         ViewGroup.LayoutParams lp = getLayoutParams();
-        int height = a.getLayoutDimension(R.styleable.DroppyMenuContainerView_android_layout_height, ViewGroup.LayoutParams.WRAP_CONTENT);
-        int width = a.getLayoutDimension(R.styleable.DroppyMenuContainerView_android_layout_width, ViewGroup.LayoutParams.WRAP_CONTENT);
+        int height = a.getLayoutDimension(R.styleable.DroppyMenuContainerView_android_layout_height, ViewGroup.LayoutParams.MATCH_PARENT);
+        int width = a.getLayoutDimension(R.styleable.DroppyMenuContainerView_android_layout_width, ViewGroup.LayoutParams.MATCH_PARENT);
 
         if (lp == null) {
             lp = new ViewGroup.LayoutParams(width, height);
