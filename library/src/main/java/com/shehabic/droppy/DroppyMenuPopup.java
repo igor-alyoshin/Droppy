@@ -171,7 +171,7 @@ public class DroppyMenuPopup {
             mPopupView = new com.shehabic.droppy.views.DroppyMenuPopupView(mContext);
             droppyMenuContainer = new DroppyMenuContainerView(mContext);
             mPopupView.addView(droppyMenuContainer);
-            FrameLayout.LayoutParams lp = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+            FrameLayout.LayoutParams lp = new FrameLayout.LayoutParams(anchor.getMeasuredWidth() + 20, ViewGroup.LayoutParams.WRAP_CONTENT);
             mPopupView.setLayoutParams(lp);
             mContentView = mPopupView;
             int i = 0;
@@ -182,7 +182,7 @@ public class DroppyMenuPopup {
                 }
             }
         }
-        mPopupView.measure(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        mPopupView.measure(anchor.getMeasuredWidth() + 20, ViewGroup.LayoutParams.WRAP_CONTENT);
         mPopupWidth = mPopupView.getMeasuredWidth();
         mPopupHeight = mPopupView.getMeasuredHeight();
     }
@@ -315,7 +315,7 @@ public class DroppyMenuPopup {
         protected DroppyClickCallbackInterface callbackInterface;
         protected boolean triggerOnAnchorClick = true;
         protected OnDismissCallback onDismissCallback;
-        protected int offsetX = -20;
+        protected int offsetX = -10;
         protected int offsetY = 25;
         protected DroppyAnimation droppyAnimation;
 
