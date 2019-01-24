@@ -1,8 +1,6 @@
 package com.shehabic.droppy_samples;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -12,15 +10,17 @@ import android.widget.Toast;
 
 import com.shehabic.droppy.DroppyClickCallbackInterface;
 import com.shehabic.droppy.DroppyMenuCustomItem;
-import com.shehabic.droppy.DroppyMenuPopup;
 import com.shehabic.droppy.DroppyMenuItem;
+import com.shehabic.droppy.DroppyMenuPopup;
 import com.shehabic.droppy.animations.DroppyFadeInAnimation;
 import com.shehabic.droppy.animations.DroppyScaleAnimation;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * Created by shehabic on 3/21/15.
  */
-public class MainActivity extends ActionBarActivity implements DroppyMenuPopup.OnDismissCallback, DroppyClickCallbackInterface {
+public class MainActivity extends AppCompatActivity implements DroppyMenuPopup.OnDismissCallback, DroppyClickCallbackInterface {
 
     DroppyMenuPopup droppyMenu;
     Button btn;

@@ -6,14 +6,15 @@ import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import com.shehabic.droppy.R;
+
+import androidx.appcompat.widget.AppCompatTextView;
 
 /**
  * Created by shehabic on 3/7/15.
  */
-public class DroppyMenuItemTitleView extends android.support.v7.widget.AppCompatTextView {
+public class DroppyMenuItemTitleView extends AppCompatTextView {
 
     public DroppyMenuItemTitleView(Context context) {
         this(context, null);

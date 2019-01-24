@@ -1,7 +1,5 @@
 package com.shehabic.droppy_samples;
 
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -16,6 +14,9 @@ import com.shehabic.droppy.DroppyClickCallbackInterface;
 import com.shehabic.droppy.DroppyMenuCustomItem;
 import com.shehabic.droppy.DroppyMenuItem;
 import com.shehabic.droppy.DroppyMenuPopup;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 
 
 public class ActivityWithFragment extends FragmentActivity {
